@@ -1,0 +1,29 @@
+<div class="search-bar-container">
+    <div class="search">
+        <input placeholder="Search..." type="text" [formControl]="searchText">
+        <button type="submit" (click)="search()"><mat-icon>search</mat-icon></button>
+    </div>
+    <mat-form-field>
+        <mat-label>Filter by</mat-label>
+        <mat-select [(value)]="filterValue">
+            <mat-option value="date">
+            Date
+            </mat-option>
+            <mat-option value="rating">
+                Rating
+            </mat-option>
+            <mat-option value="relevance">
+                Relevance
+            </mat-option>
+            <mat-option value="title">
+                Title
+            </mat-option>
+            <mat-option value="videoCount">
+                Video Count
+            </mat-option>
+            <mat-option value="viewCount">
+                View Count
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

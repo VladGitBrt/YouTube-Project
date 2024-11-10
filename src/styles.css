@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@keyframes shadow-pop-tr {
+    0% {
+      box-shadow: 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7;
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      box-shadow: 1px -1px #673ab7, 2px -2px #673ab7, 3px -3px #673ab7, 4px -4px #673ab7, 5px -5px #673ab7, 6px -6px #673ab7, 7px -7px #673ab7, 8px -8px #673ab7;
+      transform: translateX(-8px) translateY(8px);
+    }
+}
+
+@keyframes shadow-pop-back {
+    0% {
+        box-shadow: 1px -1px #673ab7, 2px -2px #673ab7, 3px -3px #673ab7, 4px -4px #673ab7, 5px -5px #673ab7, 6px -6px #673ab7, 7px -7px #673ab7, 8px -8px #673ab7;
+        transform: translateX(-8px) translateY(8px);
+      }
+    100% {
+      box-shadow: 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7, 0 0 #673ab7;
+      transform: translateX(0) translateY(0);
+    }
+}
